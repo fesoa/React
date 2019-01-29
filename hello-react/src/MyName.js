@@ -1,13 +1,12 @@
 import React, {Component} from 'react';
 
-class MyName extends Component {
-    render() {
-        return(
-            <div>
-                My Name is <b>{this.props.name}</b>.
-            </div>
-        );
-    }
+const MyName = ({name}) => {
+    return(
+        <div>안녕하세요. 제 이름은 {name}입니다.</div>
+    
+    );
 }
-
+MyName.defaultProps = {
+    name: 'Faker'
+};
 export default MyName;

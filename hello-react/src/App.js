@@ -1,12 +1,11 @@
 import React, {Component, Fragment} from 'react';
-import './mycss.css'
+import MyName from './MyName'
 
 class App extends Component {
+  
   render() {
     return (
-      <div className='My'>
-        Hello, World!
-      </div>
+      <MyName />
 
     );
   }
